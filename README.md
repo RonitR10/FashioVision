@@ -113,7 +113,7 @@ npm run dev
 - Order tracking system
   
 ## 👨‍💻 Author
-  Ronit Raj Bairwa
+  Ronit
   
   Full Stack Developer (MERN)
 
