@@ -1,105 +1,122 @@
-FashioVision 👗✨
+# 👗 FashioVision – Modern Fashion Shopping Platform (MERN)
 
-A Modern Fashion Shopping Solution
+FashioVision is a full-stack MERN-based fashion shopping platform designed to provide a smooth and modern online shopping experience.  
+The project includes user authentication, product browsing, designer-managed content, and an admin-controlled ecosystem.
 
-FashioVision is a full-stack MERN application focused on building a modern, scalable fashion shopping platform. The project is designed with a clean architecture, role-based access, and a smooth user experience for both customers and designers.
+> ⚠️ Note: AI / GAN-based virtual try-on is **not implemented yet** in the current version.
 
-🚀 Features
+---
 
-User authentication & authorization
+## 🚀 Features
 
-Role-based access (User / Designer / Admin)
+### 👤 User Features
+- User registration and login (JWT-based authentication)
+- Browse fashion products
+- View designer portfolios
+- Add products to cart
+- Persistent cart (backend synced)
 
-Product listing with pricing, sizes, and collections
+### 🎨 Designer Dashboard
+- Designer login and approval system
+- Add, update, and delete products
+- Create portfolio posts
+- Manage personal designer content
 
-Designer dashboard for managing products and portfolio posts
+### 🛠️ Admin Capabilities
+- Approve designers
+- Manage users
+- Control platform content
 
-Secure and scalable backend APIs
+---
 
-Responsive and modern UI
+## 🧱 Tech Stack
 
-Clean, maintainable project structure
+### Frontend
+- React.js
+- Tailwind CSS
+- React Router
+- Context API
 
-🛠 Tech Stack
-Frontend
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
 
-React
+---
 
-Tailwind CSS
+## 📂 Project Structure
 
-Vite
-
-Framer Motion
-
-Backend
-
-Node.js
-
-Express.js
-
-MongoDB
-
-JWT Authentication
-
-📂 Project Structure
-fashio-vision/
-├── backend/        # APIs, database models, authentication
-├── frontend/       # User-facing frontend
+```text
+FashioVision/
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── server.js
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── context/
+│   │   └── App.jsx
+│   └── main.jsx
+│
 └── README.md
+```
 
-⚙️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/USERNAME/fashio-vision.git
-cd fashio-vision
+---
 
-2️⃣ Backend setup
+## 🔐 Authentication Flow
+
+- JWT-based authentication
+- Role-based access (user / designer / admin)
+- Designer identity extracted from JWT on backend
+- Protected routes for dashboards
+
+---
+
+## 🧩 Current Status
+
+- ✅ Core MERN functionality completed
+- ✅ Authentication & role management
+- ✅ Designer dashboard implemented
+- ❌ AI / GAN Virtual Try-On (planned for future)
+
+---
+
+## 🛠️ Installation & Setup
+
+### Clone Repository
+```bash
+git clone https://github.com/your-username/FashioVision.git
+```
+## Backend Setup
+```bash
 cd backend
 npm install
 npm run dev
-
-
-Create a .env file in backend:
-
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-
-3️⃣ Frontend setup
+```
+## Frontend Setup
+```bash
 cd frontend
 npm install
 npm run dev
+```
+## 📌 Future Enhancements
+- Virtual Try-On using GAN
+- Payment gateway integration
+- Advanced product recommendation
+- Order tracking system
+- 
+## 👨‍💻 Author
+  Ronit Raj Bairwa
+  
+  Full Stack Developer (MERN)
 
-🔐 Environment Variables
+## 📄 License
 
-Ensure the following are not committed to the repository:
-
-.env
-
-node_modules
-
-dist
-
-🎯 Project Objectives
-
-Build a scalable MERN-based e-commerce platform
-
-Implement clean authentication and role-based authorization
-
-Provide designers with control over products and portfolio content
-
-Focus on maintainable code and user-friendly design
-
-📸 Screenshots
-
-(Add screenshots or screen recordings here for better presentation)
-
-📌 Planned Enhancements
-
-Payment gateway integration
-
-Wishlist and cart persistence
-
-Advanced filtering and search
-
-Analytics dashboard for designers and admins
-
-AI-based features (planned for future versions)
+This project is for educational and learning purposes.
